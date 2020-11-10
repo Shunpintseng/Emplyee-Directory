@@ -1,9 +1,8 @@
 import axios from "axios";
 
-//request employee lsit
-
+//search random generated employee list
 export default {
-employeeList: function() {
+search: function() {
 
        return axios.get("https://randomuser.me/api/?results=200&nat=us");
         

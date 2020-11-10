@@ -1,17 +1,19 @@
 import React from "react";
 
-function employeeCard(props) {
+function EmployeeCard(props) {
   return (
-    <div className="card text-center">
-      <div className="image">
-        <img src={props.picture} alt = {(props.firstName, props.lastName)}/> 
+    <div className="card">
+      <div className="picture">
+        <img alt={props.FirstName} src={props.picture} />
       </div>
 
-      <div className="profile">
-        <p>{props.firstName} {props.lastName}</p>
+      <div className="details">
+            <h4>First Name: {props.FirstName} </h4> 
+            <h4>Last Name: {props.LastName} </h4> 
+
       </div>
     </div>
   );
 }
 
-export default employeeCard;
+export default EmployeeCard;
